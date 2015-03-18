@@ -63,6 +63,7 @@ module.exports = function(grunt) {
          dest: 'lib',
          options: {
            basePath: 'src',
+           declaration: true,
            module: 'commonjs',
            sourceMap: true,
            target: 'es5'
