@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     'typescript': {
        lib: {
          src: ['src/**/*.ts'],
-         dest: 'app/src',
+         dest: 'lib',
          options: {
            basePath: 'src',
            module: 'commonjs',
