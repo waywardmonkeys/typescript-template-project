@@ -1,5 +1,6 @@
 module.exports = function(grunt) {
   grunt.initConfig({
+    'pkg': grunt.file.readJSON('package.json'),
     'jshint': {
       files: ['Gruntfile.js'],
       options: {
@@ -63,7 +64,7 @@ module.exports = function(grunt) {
                 module: 'commonjs',
                 target: 'es5',
                 out: 'docs/',
-                name: 'XXX'
+                name: '<%= pkg.name %>'
             },
             src: 'src/**/*.ts'
         }
