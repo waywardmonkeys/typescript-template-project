@@ -57,6 +57,17 @@ module.exports = function(grunt) {
         }
       }
     },
+    'typedoc': {
+        build: {
+            options: {
+                module: 'commonjs',
+                target: 'es5',
+                out: 'docs/',
+                name: 'XXX'
+            },
+            src: 'src/**/*.ts'
+        }
+    },
     'typescript': {
        lib: {
          src: ['src/**/*.ts'],
@@ -95,7 +106,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-mocha-test');
   grunt.loadNpmTasks('grunt-tsd');
   grunt.loadNpmTasks('grunt-tslint');
+  grunt.loadNpmTasks('grunt-typedoc');
   grunt.loadNpmTasks('grunt-typescript');
+
+  grunt.registerTask('docs', ['typedoc']);
 
   grunt.registerTask('lint', ['jshint', 'tslint']);
 
