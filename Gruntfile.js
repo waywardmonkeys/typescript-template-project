@@ -77,6 +77,7 @@ module.exports = function(grunt) {
            basePath: 'src',
            declaration: true,
            module: 'commonjs',
+           noImplicitAny: true,
            sourceMap: true,
            target: 'es5'
          }
