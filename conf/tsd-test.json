@@ -6,10 +6,10 @@
   "bundle": "../typings/test/tsd.d.ts",
   "installed": {
     "chai/chai.d.ts": {
-      "commit": "0d331bf6cd724cb79768137290028fae1926f5f3"
+      "commit": "584c5f593f45baa11ffc8aba2f8f19745d754ffd"
     },
     "mocha/mocha.d.ts": {
-      "commit": "0d331bf6cd724cb79768137290028fae1926f5f3"
+      "commit": "584c5f593f45baa11ffc8aba2f8f19745d754ffd"
     }
   }
 }
