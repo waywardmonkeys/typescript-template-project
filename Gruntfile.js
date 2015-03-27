@@ -92,12 +92,8 @@ module.exports = function(grunt) {
        }
     },
     'watch': {
-      lib: {
-        files: 'src/**/*.ts',
-        tasks: ['tslint', 'typescript']
-      },
-      test: {
-        files: 'test/**/*.ts',
+      default: {
+        files: ['src/**/*.ts', 'test/**/*.ts'],
         tasks: ['test']
       }
     }
