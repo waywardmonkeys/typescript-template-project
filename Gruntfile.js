@@ -115,7 +115,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('run-tests', ['mochaTest']);
 
-  grunt.registerTask('test', ['tslint', 'typescript', 'run-tests']);
+  grunt.registerTask('test', ['typescript', 'tslint', 'run-tests']);
 
-  grunt.registerTask('default', ['lint', 'build', 'run-tests']);
+  grunt.registerTask('default', ['build', 'lint', 'run-tests']);
 };
