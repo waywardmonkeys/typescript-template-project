@@ -86,6 +86,16 @@ configuration file to use when running the ``tsd`` tool::
 
     tsd --config conf/tsd-test.json query mocha --save --action install
 
+After installing the definition, you will want to update the
+bundled definitions by running one of the following::
+
+    grunt tsd
+    grunt tsd:lib
+    grunt tsd:test
+
+The first will re-bundle both ``lib`` and ``test``, while the other
+forms re-bundle just one target.
+
 .. _Grunt: http://gruntjs.com/
 .. _JSHint: http://jshint.com/
 .. _tslint: https://www.npmjs.com/package/tslint
